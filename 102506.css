@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: pink;
+}
+
+h1 {
+  margin: 10px 20px;
+  text-align: center;
+}
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+fieldset {
+  box-shadow: 5px 5px 10px gray;
+}

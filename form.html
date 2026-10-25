@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example: HTML Form</title>
+	<link id="stylesheet" rel="stylesheet" type="text/css" href="102506.css">
+</head>
+<body>
+  <h1>A registration form</h1>
+  <form method="post" action="" enctype="multipart/form-data">
+  	<fieldset>
+  		<legend>Personal Information</legend>
+  		<div>
+  			<label for="fname">First Name</label>
+  			<input type="text" name="fname" id="fname" placeholder="e.g. Daniella" required autocomplete="given-name" autofocus>
+  		</div>
+  		<div>
+  			<label for="lname">Last Name</label>
+  			<input type="text" name="lname" id="lname" placeholder="e.g. Calleigh" required autocomplete="family-name">
+  		</div>
+  		<div>
+			<label for="m">Gender</label>
+			<input type="radio" name="gender" id="m" value="male" required> Male
+			<input type="radio" name="gender" id="f" value="female"> Female
+		</div>
+		<div>
+			<label for="dob">Date of Birth</label>
+			<input type="date" name="dob" id="dob" min="1950-01-01" max="2010-12-31" required>
+		</div>
+		<div>
+			<label for="age">Age</label>
+			<input type="number" name="age" id="age" min="16" max="100" placeholder="16 - 100">
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="name@example.com" required autocomplete="email">
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" placeholder="At least 8 characters" minlength="8" required>
+		</div>
+  	</fieldset>
+
+  	<fieldset>
+  		<legend>Address</legend>
+  		<div>
+  			<label for="street">Street</label>
+  			<input type="text" name="street" id="street" placeholder="Street address" required autocomplete="street-address">
+  		</div>
+		<div>
+			<label for="city">City</label>
+			<input type="text" name="city" id="city" placeholder="e.g. Kuching" required autocomplete="address-level2">
+		</div>
+  		<div>
+  			<label for="state">State</label>
+  			<select name="state" id="state">
+  				<option value="Sarawak">Sarawak</option>
+  				<option value="Sabah">Sabah</option>
+  				<option value="Selangor">Selangor</option>
+  			</select>
+  		</div>
+		<div>
+			<label for="country">Country</label>
+			<input type="text" name="country" id="country" placeholder="e.g. Malaysia" required autocomplete="country-name">
+		</div>	
+		<div>
+			<label for="postcode">Postcode</label>
+			<input type="text" name="postcode" id="postcode" pattern="[0-9]{5}" placeholder="e.g. 93000" required autocomplete="postal-code">
+		</div>				
+  	</fieldset>
+  	<div>
+ 		<textarea cols="65" rows="3" style="margin:5px 0 0 2px">TERMS AND CONDITIONS</textarea>
+  	</div>
+  	<div>
+  		<input type="checkbox" name="accept" id="accept" required>
+  		<label for="accept" style="width:90%">I accept the above Terms and Conditions.</label>
+  	</div>
+
+  	<input type="submit" name="submit" value="Register" style="margin-left:3px">
+  	<input type="reset" name="reset" value="Clear">
+  </form>
+
+  <br>
+  <a href="index.html">Back to Main Page</a>
+</body>
+</html>
